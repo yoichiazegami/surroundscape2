@@ -1,0 +1,345 @@
+@charset "UTF-8";
+body {
+  background-color: #dce0e8;
+  overflow-x: hidden;
+  font-family: "游ゴシック体", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.1;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+}
+
+body, div, a, h1, h2, h3, h4, h5, h6, p, img, ins, small, strong,
+ul, li, table, caption, tr, th, td, article, footer, header, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  color: #0148e8;
+}
+
+.video {
+  position: fixed;
+  mix-blend-mode: multiply;
+  width: 160vw;
+  left: -20vw;
+  height: 110vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -webkit-filter: hue-rotate(-2deg) brightness(102%);
+          filter: hue-rotate(-2deg) brightness(102%);
+}
+
+.title {
+  width: 500px;
+  margin-top: 100px;
+  margin-left: -4px;
+}
+
+.member {
+  margin-left: -4px;
+  width: 500px;
+}
+
+@media (max-width: 600px) {
+  .title, .member {
+    width: 100%;
+  }
+}
+.introduction--m {
+  text-align: justify;
+}
+
+.introduction--m span.paren {
+  display: inline;
+}
+
+@media (min-width: 660px) {
+  .introduction--m {
+    display: none;
+  }
+}
+@media (max-width: 660px) {
+  .introduction {
+    display: none;
+    text-align: justify;
+    width: 100%;
+  }
+
+  .player-container {
+    margin-left: -10vw;
+    margin-right: -10vw;
+  }
+}
+@media (max-width: 1000px) {
+  .container-sub {
+    margin: 0 10vw;
+  }
+}
+h1 {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 3.5px;
+  margin-bottom: 20px;
+  margin-left: 1px;
+}
+
+.introduction {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.line {
+  display: none;
+  position: fixed;
+  top: 50;
+  right: 30;
+  width: 95vw;
+  height: 88vh;
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+.container {
+  max-width: 700px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.spacer--s {
+  height: 13px;
+}
+.spacer--m {
+  height: 40px;
+}
+.spacer--l {
+  height: 250px;
+}
+.spacer--xl {
+  height: 290px;
+}
+
+span {
+  display: inline-block;
+}
+
+.paren {
+  font-size: 14px;
+}
+
+.day {
+  font-weight: 700;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  width: 13px;
+  -webkit-transform: scale(0.6) translateY(3px);
+          transform: scale(0.6) translateY(3px);
+}
+
+iframe {
+  mix-blend-mode: darken;
+  -webkit-filter: hue-rotate(215deg) saturate(120%);
+          filter: hue-rotate(215deg) saturate(120%);
+}
+
+.mask {
+  display: none;
+  background-color: #dce0e8;
+  z-index: 3;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mask-body {
+  width: 700px;
+  margin: 0 10vw;
+}
+
+@media (max-width: 660px) {
+  .mask-body {
+    height: calc(100% + 180px);
+    padding-top: 300px;
+  }
+}
+li {
+  list-style: "• ";
+  margin-left: 11px;
+}
+
+li.sub {
+  list-style: "- ";
+  margin-left: 11px;
+}
+
+.player-container {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+}
+
+.player-container {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.player-container ＆::-webkit-scrollbar {
+  display: none;
+}
+
+.player {
+  padding: 20px;
+  width: 300px;
+  border: solid 1px;
+  border-color: #ced1d9;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.name {
+  border-top: solid 1px;
+  border-color: #ced1d9;
+  padding: 17px 0 2px 8px;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1;
+}
+.name span {
+  letter-spacing: 2.5px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.name__plus {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scale(0.8) translateX(0.7px);
+          transform: scale(0.8) translateX(0.7px);
+  color: #b6b9bf;
+}
+
+span.equal {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1.3) scaleY(0.9);
+          transform: scaleX(1.3) scaleY(0.9);
+  width: 16px;
+}
+
+span.dash {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(2);
+          transform: scaleX(2);
+  width: 30px;
+}
+
+p.copyright {
+  font-size: 14px;
+}
+
+.goods-table {
+  max-width: 580px;
+  border-bottom: solid 1px;
+  border-color: #ced1d9;
+}
+.goods-table__line {
+  letter-spacing: 1;
+  border-top: solid 1px;
+  border-color: #ced1d9;
+  padding-top: 7px;
+  padding-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.goods-table__heading {
+  width: 220px;
+}
+.goods-table__comment {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  width: 180px;
+}
+
+@media (max-width: 570px) {
+  .goods-table__heading {
+    width: 82%;
+  }
+  .goods-table__comment {
+    display: none;
+  }
+}
+@media (max-width: 660px) {
+  .spacer--l:after, .spacer--xl:after {
+    content: "";
+    width: 100vw;
+    border-top: solid 1px;
+    border-color: #ced1d9;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    -webkit-transform: translateY(130px);
+            transform: translateY(130px);
+  }
+}
+.fixed {
+  position: fixed;
+  margin-top: 9px;
+  font-size: 10px;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeInAnime;
+          animation-name: fadeInAnime;
+  -webkit-animation-duration: 0.04s;
+          animation-duration: 0.04s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
